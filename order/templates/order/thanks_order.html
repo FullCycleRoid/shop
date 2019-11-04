@@ -1,0 +1,20 @@
+{% extends "shop/base.html" %}
+{% block title %}
+    Оформление заказа
+{% endblock %}
+{% block content %}
+
+
+    <h1>Оформление заказа</h1>
+
+    <div class="container">
+        <h2>Благодарим за заказ.</h2>
+        <h2>Ваш заказ номер: {{order.id}}</h2>
+
+        <h2>Менеджер скоро свяжется с вами.</h2>
+
+        <a href="{% url 'shop:product_list'%}">Вернуться на главную страницу</a>
+    </div>
+
+
+{% endblock %}
